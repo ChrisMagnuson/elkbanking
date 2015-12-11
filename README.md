@@ -47,7 +47,11 @@ I will walk you through the process of recreating the environment I use to run a
 ##Analyze transactions in kibana:
 * `sudo systemctl start elasticsearch kibana`
 * Open a web browser to localhost:5601
-* to be continued, google for videos on analyzing data with Kibana
+* Navigate to Settings > Objects
+* Import everything in the subfolders of the kibana directory from the elkbanking repository
+* Navigate to Dashboards, click open, click Financial Dashboard
+* Set the time range for the last 6 months
+* There are other saved visualizattions to give you and idea of what is possible
 
 #Plans for the future
 My intent is that one day there would be service providers running this software and that at least a [zero knowledge](https://spideroak.com/features/zero-knowledge) version of this software exists that would allow only the user of the service and not the service provider to access their data.
