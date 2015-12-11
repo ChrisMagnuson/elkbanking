@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "Range-of-transaction-amounts-by-vendors-for-recurring-bills",
+    "_type": "visualization",
+    "_source": {
+      "title": "Range of transaction amounts by vendors for recurring bills",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"NAME.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"row\":false}},{\"id\":\"5\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"TransactionAmountAbsoluteValue\"}},{\"id\":\"6\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"TransactionAmountAbsoluteValue\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "All-recurring-bills",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "Pie-chart-of-credits-and-debits-broken-down-by-vendor-name",
+    "_type": "visualization",
+    "_source": {
+      "title": "Pie chart of credits and debits broken down by vendor name",
+      "visState": "{\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"TransactionAmountAbsoluteValue\"}},{\"id\":\"2\",\"type\":\"range\",\"schema\":\"split\",\"params\":{\"field\":\"TransactionAmount\",\"ranges\":[{\"from\":-9999,\"to\":0},{\"from\":0,\"to\":9999}],\"row\":false}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"NAME.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Everything-with-only-user-relevant-columns",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]

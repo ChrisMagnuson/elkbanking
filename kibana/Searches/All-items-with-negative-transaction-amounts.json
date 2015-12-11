@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "All-items-with-negative-transaction-amounts",
+    "_type": "search",
+    "_source": {
+      "title": "All items with negative transaction amounts",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"logstash-*\",\n  \"filter\": [\n    {\n      \"meta\": {\n        \"negate\": false,\n        \"index\": \"logstash-*\",\n        \"key\": \"query\",\n        \"value\": \"{\\\"range\\\":{\\\"TransactionAmount\\\":{\\\"lte\\\":0}}}\",\n        \"disabled\": false,\n        \"alias\": null\n      },\n      \"query\": {\n        \"range\": {\n          \"TransactionAmount\": {\n            \"lte\": 0\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  },\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  }\n}"
+      }
+    }
+  }
+]

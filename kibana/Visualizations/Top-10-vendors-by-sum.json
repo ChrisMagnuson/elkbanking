@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "Top-10-vendors-by-sum",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 10 vendors by sum",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"TransactionAmountAbsoluteValue\"}},{\"id\":\"3\",\"type\":\"range\",\"schema\":\"split\",\"params\":{\"field\":\"TransactionAmount\",\"ranges\":[{\"from\":-999,\"to\":0},{\"from\":0,\"to\":999}],\"row\":false}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"NAME.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Everything",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]

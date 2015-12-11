@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "Count-of-transactions-grouped-into-buckets-in-10-increments-where-transaction-amount-is-less-than-500",
+    "_type": "visualization",
+    "_source": {
+      "title": "Count of transactions grouped into buckets in 10 increments where transaction amount is less than 500",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"TransactionAmountAbsoluteValue\",\"ranges\":[{\"from\":0,\"to\":500}]}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"TransactionAmountAbsoluteValue\",\"interval\":10,\"extended_bounds\":{}}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "Everything",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]
